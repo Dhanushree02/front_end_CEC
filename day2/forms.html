@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:bisque;
+            font-family: Arial, sans-serif;
+        }
+        form{
+            margin:200px;
+            padding:200px;
+            background-color:lightgray;
+            font-family: Arial, sans-serif;
+            border:20px solid black;
+        }
+        label{
+            color:color-mix(in srgb, color percentage, color percentage);
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: blanchedalmond;        }
+    </style>
+</head>
+<body>
+
+    
+    <nav>
+        <ul>
+            <li><a href="forms.html" target="_blank">forms</a></li>
+            <li><a href="./table.html">tables</li></a>
+        </ul>
+    </nav>
+   
+     <form action="/submit" method="post">
+         <h1 style="text-align: center; color: blueviolet(241,10,20);background-color:violet">Form Submission</h1>
+      <label for="name">Name:</label>
+      <input type="name" id="name" name="name" required/><br>
+ 
+    <br>
+      <label for="email">email:</label>
+      <input type="email" id="email" name="email" required/><br>
+      <br>
+      <label for="male">male</label>
+      <input type="radio" id="male" name="gender" value="male"><br><br>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female"><br>
+        <h3>Terms and condition</h3>
+        <label>
+            <input type="checkbox" name="terms" required>i agree to the terms and condition</label><br></br>
+            <label for="department">department</label>
+            <select id="department" name="department">
+                <option value="ISE">ISE</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE </option><br></br>
+                <label class="pass"for="password">password</label>
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                    ><br /><br />
+                <input type="password" id="password" name="password" required/><br></br>
+                <label for="birthday">birthday</label>
+                <input type="date" id="birthday" name="birthday" required/><br></br>
+                <textarea>Discription</textarea><br></br>
+               c<input
+                    type="file"
+                    name="pdf"
+                    id="pdf"
+                    accept="Application/pdf"
+                    ><br /><br />
+                    <input
+                    type="file"
+                    name="doc"
+                    id="doc"
+                    accept="Application/pdf"
+                    ><br /><br />
+                    <label for="rating">Give your rating:</label>
+                     <input
+                    type="range"
+                    name="range"
+                    id="range"
+                    min="0"
+                    max="100"
+                    ><br /><br />
+                     
+
+
+                <input type="submit"value="value"/>
+                
+            </select>
+        </label>
+      <input type="submit" value="Submit"/>
+
+
+       
+</body>
+</html>
