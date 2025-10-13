@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ES6 Features</h1>
+    <p id="demo"></p>
+    <script>
+        //1. let and const
+        let name = "Dhanushree";
+        const pi = 3.1415;
+        console.log(name, pi);
+        //2. Template Literals
+        let age = 20;
+        let greeting = 'hello ${name}, you are ${age} years old.';
+          console.log(greeting);
+        //3. Arrow Functions
+        const multiply = (a, b) => a * b;
+        console.log(multiply(5, 10));
+        //4. Destructuring
+        const numbers = [1, 2, 3];
+        const [x, y, z] = numbers;
+        console.log("destructured:", x, y, z);
+        //5.destructuring objects
+        const person = { fname: "Dhanushree", age: 20, city: "Germany" };
+        const { fname, age: personAge, city } = person;
+        console.log("destructured object:", fname, personAge, city);
+        //6. Spread Operator
+        const arr1 = [1, 2];
+        const arr2 = [3, 4];
+        const combined = [...arr1, ...arr2];
+        console.log("combined array:", combined);
+        //7.arrow function
+        const add = (a, b) => a + b;
+        console.log(add(5, 10));
+        console.log("arrow add:", add(5, 10));
+        //8.display something on the page
+        document.getElementById("demo").innerText = greeting;
+    </script>
+
+</body>
+</html>
